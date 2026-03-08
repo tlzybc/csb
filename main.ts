@@ -15,10 +15,6 @@ enum PingUnit {
 namespace sonar {
     /**
      * 发送超声波探测并获取回声时间(以微秒为单位)
-     * @param trig trig引脚
-     * @param echo echo引脚
-     * @param unit 单位
-     * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
     //% blockId=sonar_ping block="trig引脚 %trig|echo引脚 %echo|单位 %unit"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
