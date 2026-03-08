@@ -11,7 +11,7 @@ enum PingUnit {
  * Sonar and ping utilities
  */
 //% color="#2c3e50" weight=10
-namespace sonar {
+namespace 超声波模块 {
     /**
      * 发送超声波探测并获取回声时间(以微秒为单位)
      * @param trig tigger pin
