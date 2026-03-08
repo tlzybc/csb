@@ -11,7 +11,8 @@ enum PingUnit {
  * Sonar and ping utilities
  */
 //% color="#2c3e50" weight=10
-namespace 超声波模块 {
+//% blockId="sonar" block="超声波模块"
+namespace sonar {
     /**
      * 发送超声波探测并获取回声时间(以微秒为单位)
      * @param trig tigger pin
@@ -19,7 +20,7 @@ namespace 超声波模块 {
      * @param unit desired conversion unit
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
-    //% blockId=sonar_ping block="ping trig %trig|echo %echo|unit %unit"
+    //% blockId=sonar_ping block="trig引脚 %trig|echo引脚 %echo|单位 %unit"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
