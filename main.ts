@@ -1,23 +1,23 @@
 enum PingUnit {
-    //% block="μs"
+    //% block="微秒"
     MicroSeconds,
-    //% block="cm"
+    //% block="厘米"
     Centimeters,
-    //% block="inches"
+    //% block="英寸"
     Inches
 }
 
 /**
  * Sonar and ping utilities
  */
-//% color="#2c3e50" weight=10
+//% color="#2c3e50" weight=24
 //% blockId="sonar" block="超声波模块"
 namespace sonar {
     /**
      * 发送超声波探测并获取回声时间(以微秒为单位)
-     * @param trig tigger pin
-     * @param echo echo pin
-     * @param unit desired conversion unit
+     * @param trig trig引脚
+     * @param echo echo引脚
+     * @param unit 单位
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
     //% blockId=sonar_ping block="trig引脚 %trig|echo引脚 %echo|单位 %unit"
